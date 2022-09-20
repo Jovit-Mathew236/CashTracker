@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.App {
+    margin: 0px 10px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.total_cash {
+    display: flex;
+    padding: 0px 20px;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 820px;
+    justify-content: space-around;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.14);
+    border-radius: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.total_cash .in_bank,
+.total_cash .in_hand {
+    width: 40%;
+    height: calc(110px + 5vh);
+    margin: 30px 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 14px rgb(0 0 0 / 15%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total_cash .in_bank p.tot_cash_title,
+.total_cash .in_hand p.tot_cash_title {
+    background: #FFA800;
+    width: calc(100% + 40px);
+    height: 70px;
+    font-size: 40px;
+    margin-top: -20px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.total_cash .in_hand p.tot_cash_title {
+    background: #7200E4;
+}
+
+.ruppes {
+    /* font-size: calc(6vh - 3vw); */
+    font-size: 60px;
+}
+
+.add_sub_btns {
+    display: flex;
+    width: 50px;
+    justify-content: space-between;
+}
+
+.add_sub_btns .add {
+    background-color: green;
+}
+
+.add_sub_btns .sub {
+    background-color: red;
+}
+
+.add,
+.sub {
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+.cash_uses {
+    /* padding: 0px 20px; */
+    margin: auto;
+    margin-top: 20px;
+    max-width: 860px;
+    box-shadow: 0px 4px 16px rgb(0 0 0 / 14%);
+    border-radius: 10px;
+}
+
+.use {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date_and_month {
+    width: 10%;
+    padding: 10px 0px;
+}
+
+.dateandmonth {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* font-weight: bold; */
+}
+
+.date_and_month .date {
+    font-size: 20px;
+}
+
+.date_and_month .month {
+    font-size: 12px;
+}
+
+.use_reason {
+    background-color: aquamarine;
+    width: 80%;
+    padding: 0px 20px;
+    color: white;
+}
+
+.use_reason .cash_type {
+
+    width: fit-content;
+    background-color: blueviolet;
+    border-radius: 30px;
+    padding: 0px 20px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.use_reason input {
+
+    height: 50%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+
+}
+
+.use_ruppes {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.use_ruppes .used_cash {
+    font-size: 15px;
+}
